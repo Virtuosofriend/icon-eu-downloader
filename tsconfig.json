@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "moduleResolution": "Node",
+        "baseUrl": "./src",
+        "paths": {
+            "@/types": ["types"],
+        },
+        "types": [
+            "node",
+        ],
+        "typeRoots": ["src/types", "./node_modules/@types"],
+        "rootDir": "./src",
+        "outDir": "./dist",                         
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        // "allowImportingTsExtensions": false,
+        "allowJs": true,
+        // "noEmit": true,
+        // "noEmitOnError": true,
+        },
+        "include": [
+            "src/**/*",
+            "src/types/**/*",
+            "src/**/*.mjs"
+        ],
+        "exclude": ["node_modules", "dist"],
+}
