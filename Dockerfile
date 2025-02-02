@@ -1,4 +1,4 @@
-FROM node:20.16.0
+FROM --platform=linux/amd64 node:20.16.0-alpine3.20
 
 WORKDIR /app
 COPY package*.json ./
