@@ -63,7 +63,7 @@ async function downloadForecastFiles() {
             const filename = `${baseFilename}_${hourString}_${product.toUpperCase()}.grib2.bz2`;
             const url = `${BASE_URL}/${timestamp}/${product}/${filename}`;
             const outputPath = path.join(productFolder, filename);
-            const extractedPath = outputPath.replace(".bz2", ".grib2");
+            const extractedPath = outputPath.replace(/\.grib2\.bz2$/, ".grib2");
 
             try {
                 console.log(`Downloading ${filename}...`);

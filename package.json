@@ -1,6 +1,6 @@
 {
   "name": "icon-eu-downloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "IconEU downloader forecast data",
   "main": "dist/index.mjs",
   "scripts": {

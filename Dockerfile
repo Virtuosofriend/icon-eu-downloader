@@ -15,6 +15,7 @@ ENV TIMESTAMP=${TIMESTAMP}
 ENV PRODUCTS=${PRODUCTS}
 ENV MAX_TIME=${MAX_TIME}
 ENV DESTINATION_FOLDER=${DESTINATION_FOLDER}
+RUN npm run build
 
 # Run the script
 CMD ["node", "dist/index.mjs"]

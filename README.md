@@ -12,8 +12,9 @@ Test the Docker image locally:
 
 `docker run --rm \
   -e TIMESTAMP=06 \
-  -e PRODUCT=t_2m,ww,clct \
+  -e PRODUCTS=t_2m,ww,clct \
   -e MAX_TIME=48 \
+  -e DESTINATION_FOLDER=/data \
   -v $(pwd)/forecasts:/app/forecasts \
   virtuosofriend/iconeu-downloader:latest
   `
